@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binturabi Calc</title>
+    <style>
+        body{
+            padding:0;
+            margin:0;
+            background:url('nature.jpg');
+            background-position: center;
+        }
+        h2{
+            text-align:center;
+            font-size:50px;
+            margin-bottom:10px;
+            color:aliceblue;
+            text-transform: uppercase;
+            font-style:serif;
+        }
+        .cov{
+            width:22%;
+            height:470px;
+            margin-left:auto;
+            margin-right:auto;
+            background-color:burlywood;
+            border-radius:10px;
+            padding:20px;
+        }
+        input{
+            width:80px;
+            height:70px;
+            border-radius:10px;
+            margin-bottom:10px;
+            box-shadow: 5px 5px 5px gray;
+            font-size:20px;
+            font-style:sans-serif;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h2>Rabi calculator</h2>
+    <div class="cov">
+    <form action="#" name="calc">
+        <input type="text" name="show" style="width:320px;"><br>
+        <input type="button" value="0"  onclick="calc.show.value +='0'">
+        <input type="button" value="1"  onclick="calc.show.value +='1'">
+        <input type="button" value="2"  onclick="calc.show.value +='2'">
+        <input type="button" value="+"  onclick="calc.show.value +='+'"><br>
+        <input type="button" value="3"  onclick="calc.show.value +='3'">
+        <input type="button" value="4"  onclick="calc.show.value +='4'">
+        <input type="button" value="5"  onclick="calc.show.value +='5'">
+        <input type="button" value="-"  onclick="calc.show.value +='-'"><br>
+        <input type="button" value="6"  onclick="calc.show.value +='6'">
+        <input type="button" value="7"  onclick="calc.show.value +='7'">
+        <input type="button" value="8"  onclick="calc.show.value +='8'">
+        <input type="button" value="x"  onclick="calc.show.value +='*'"><br>
+        <input type="button" value="9"  onclick="calc.show.value +='9'">
+        <input type="button" value="del"  onclick="calc.show.value =''">
+        <input type="button" value="="  onclick="calc.show.value =eval(calc.show.value)">
+        <input type="button" value="÷"  onclick="calc.show.value +='÷'">
+        <input type="button" value="."  onclick="calc.show.value +='.'">
+        <input type="button" value=","  onclick="calc.show.value +=','">
+        <input type="button" value=","  onclick="calc.show.value +=','">
+        <input type="button" value=","  onclick="calc.show.value +=','">
+    </form>
+</div>
+</body>
+    
+</body>
+</html>
